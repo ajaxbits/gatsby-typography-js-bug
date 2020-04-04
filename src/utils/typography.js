@@ -3,14 +3,8 @@ import Typography from "typography"
 const typography = new Typography({
   baseFontSize: "20px",
   baseLineHeight: 1.5,
-  headerFontFamily: [
-    "Archivo Black",
-    "Helvetica Neue",
-    "Segoe UI",
-    "Helvetica",
-    "Arial",
-    "sans-serif",
-  ],
+  scaleRatio: 2.5,
+  headerFontFamily: ["Archivo Black", "Helvetica", "Arial", "sans-serif"],
   bodyFontFamily: ["Lora", "serif"],
   googleFonts: [
     {

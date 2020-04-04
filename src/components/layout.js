@@ -19,6 +19,7 @@ export default ({ children }) => (
           margin-bottom: ${rhythm(2)};
           display: inline-block;
           font-style: normal;
+          text-transform: uppercase;
         `}
       >
         Pandas Eating Lots
@@ -28,6 +29,7 @@ export default ({ children }) => (
       to={`/about/`}
       css={css`
         float: right;
+        text-transform: lowercase;
       `}
     >
       About
