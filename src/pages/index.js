@@ -6,7 +6,6 @@ import Layout from "../components/layout"
 import Header from "../components/header"
 
 export default ({ data }) => {
-  console.log(data)
   return (
     <Layout>
       <div>
@@ -17,7 +16,7 @@ export default ({ data }) => {
               border-bottom: 1px solid;
             `}
           >
-            Amazing Pandas Eating Things
+            Welcome to {data.site.siteMetadata.title}
           </div>
         </Header>
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
@@ -73,6 +72,11 @@ export const query = graphql`
           }
           excerpt
         }
+      }
+    }
+    site {
+      siteMetadata {
+        title
       }
     }
   }
